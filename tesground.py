@@ -1,4 +1,16 @@
-import re
+def gcdlcm2(a, b):
+    if a < b:
+        a, b = b, a
+    if a % b != 0:
+        c = a % b
+        while c:
+            c , b = b % c, c   
+    return(b)
 
-if not re.findall(r"[A-Za-z]", "1234"):
-    print("2")
+
+]
+    
+a=15
+b=24
+
+print(gcdlcm(a, b))
